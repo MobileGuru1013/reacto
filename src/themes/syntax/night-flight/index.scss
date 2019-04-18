@@ -1,0 +1,109 @@
+@import "./_colors";
+
+/*
+  Name:       one-dark 1.1.1
+  Author:     Török Ádám (http://github.com/Aerobird98)
+  Original Atom One Dark Theme (https://github.com/atom/one-dark-ui & https://github.com/atom/one-dark-syntax)
+  Tweaks by Arnaud Dellinger @eveningkid
+*/
+
+.cm-s-one-dark {
+  background-color: $background;
+  font-weight: 350;
+  font-size: 18px;
+  color: #abb2bf;
+
+  .CodeMirror-selected, .cm-searching {
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  .CodeMirror-gutter, .CodeMirror-gutters {
+    border: none;
+  }
+
+  .CodeMirror-linenumber,
+  .CodeMirror-linenumbers {
+    color: $white;
+    background-color: transparent;
+  }
+
+  .CodeMirror-lines {
+    color: #abb2bf !important;
+    background-color: transparent;
+  }
+
+  .CodeMirror-cursor {
+    border-left: 2px solid #fff;
+  }
+
+  /* addon: edit/machingbrackets.js & addon: edit/matchtags.js */
+  .CodeMirror-matchingbracket,
+  .CodeMirror-matchingtag {
+    border-bottom: 1px solid $white;
+    // text-decoration: underline;
+    color: $white !important;
+  }
+
+  .CodeMirror-nonmatchingbracket {
+    border-bottom: 2px solid #e06c75;
+    color: #abb2bf !important;
+    background-color: transparent;
+  }
+
+  /* addon: fold/foldgutter.js */
+  .CodeMirror-foldmarker,
+  .CodeMirror-foldgutter,
+  .CodeMirror-foldgutter-open,
+  .CodeMirror-foldgutter-folded {
+    border: none;
+    text-shadow: none;
+    color: #5c6370 !important;
+    background-color: transparent;
+  }
+
+  /* addon: selection/active-line.js */
+  .CodeMirror-activeline-background {
+    background: rgb(38, 38, 38);
+  }
+
+  .CodeMirror-activeline-gutter {
+    .CodeMirror-linenumber {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  /* basic syntax */
+  .cm-header {color: #e06c75;}
+  .cm-quote {color: #5c6370;font-style: italic;}
+  .cm-negative {color: #e06c75;}
+  .cm-positive {color: #e06c75;}
+  .cm-strong {color: #d19a66;font-weight: bold;}
+  .cm-header .cm-strong {color: #d19a66;font-weight: bold;}
+  .cm-em {color: #c678dd;font-style: italic;}
+  .cm-header .cm-em {color: #c678dd;font-style: italic;}
+  .cm-tag {color: #e06c75;}
+  .cm-attribute {color: #d19a66;}
+  .cm-link {color: #98c379;border-bottom: solid 1px #98c379;}
+  .cm-builtin {color: #e06c75;}
+  .cm-keyword {color: #c678dd;}
+  .cm-def {color: #e5c07b;} /* original:  #d19a66; */
+  .cm-atom {color: #d19a66;}
+  .cm-number {color: #d19a66;}
+  .cm-property {color: #56b6c2;} /* original: #abb2bf */
+  .cm-qualifier {color: #d19a66;}
+  .cm-variable {color: #e06c75;}
+  .cm-string {color: #98c379;}
+  .cm-punctuation {color: #abb2bf;}
+  .cm-operator {color: #56b6c2;} /* original: #abb2bf */
+  .cm-meta {color: #abb2bf;}
+  .cm-bracket {color: #abb2bf;}
+  .cm-comment {color: #5c6370;font-style: italic;}
+  .cm-error {color: #e06c75;}
+  /* css syntax corrections */
+  .cm-m-css.cm-variable {color: #828997;}
+  .cm-m-css.cm-property  {color: #abb2bf;}
+  .cm-m-css.cm-atom  {color: #56b6c2;}
+  .cm-m-css.cm-builtin {color: #56b6c2;}
+  /* lua syntax corrections */
+  .cm-m-lua.cm-variable {color: #56b6c2;}
+}

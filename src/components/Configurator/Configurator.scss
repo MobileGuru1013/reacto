@@ -1,0 +1,33 @@
+.Configurator {
+  width: 230px;
+
+  .ConfiguratorContent {
+    max-height: 420px;
+    overflow-y: auto;
+    transform: translate3d(0, 0, 0);
+
+    &.busy {
+      cursor: default;
+      opacity: 0.8;
+    }
+  }
+}
+
+.ConfiguratorContainer {
+  &:hover {
+    span {
+      opacity: 1;
+    }
+  }
+
+  span {
+    opacity: 0.6;
+    font-weight: normal !important;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+
+    &.ant-popover-open {
+      opacity: 1;
+    }
+  }
+}

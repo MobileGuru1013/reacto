@@ -1,0 +1,42 @@
+{
+  "appId": "com.eveningkid.reacto",
+  "productName": "Reacto",
+  "icon": "./static/icon640x640.png",
+  "compression": "maximum",
+  "directories": {
+    "app": "build",
+    "output": "dist"
+  },
+  "files": [
+    "build/**/*",
+    "public/**/*",
+  ],
+  "directories": {
+    "buildResources": "assets"
+  },
+  "publish": {
+    "provider": "github"
+  },
+  "linux": {
+    "maintainer": "Arnaud Dellinger",
+    "vendor": "Arnaud Dellinger",
+    "category": "Development;",
+    "icon": "./static/icon640x640.png",
+    "target": [
+      "AppImage",
+      "deb"
+    ]
+  },
+  "win": {
+    "target": [
+      "NSIS"
+    ]
+  },
+  "mac": {
+    "category": "public.app-category.developer-tools",
+    "target": [
+      "dmg"
+    ],
+    "identity": null
+  }
+}
